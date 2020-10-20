@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <link rel="icon" type="image/png" href="SliceOfPizza.png">
+        <title>My Pizza - PickUp</title>
+        <style>
+            ul
+            {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: skyblue;
+            }
+            li
+            {
+                float: left;
+                            
+            }
+            li a
+            {
+                display: block;
+                color:black;
+                text-align:center;
+                padding:10px 16px;
+                text-decoration:none;
+                font-size: 20pt;
+            }
+
+            table,th,td
+            {
+                border: 1px solid skyblue;
+                border-collapse: collapse;
+                
+            }
+    
+        </style>
+
+        <ul>
+            <li><a href="HomePageOfPizzaShop.html"><img src="SliceOfPizza.png" alt="Pizza" width = "40" height="40" ></a></li>
+            <li><a href="HomePageOfPizzaShop.html">Home</a></li>
+            <li><a href="OnlineOrder.html">Online Order</a></li>
+            <li><a href="PizzaMenu.html">Menu</a></li>
+            <li><a href="LocationOfPizzaShop.html">Store Location</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+        <br>
+    </head>
+    <body>
+        <h3>Please Select the store near you:</h3>
+        
+        <form action="Thanks.html">
+            <input type="radio" id ="4020" name="storeAddress" value="storeAddress">
+            <label for="storeAddress">13156 Newcastle Commons Dr Newcastle, WA 98059</label>
+            <br>
+            <input type="radio" id ="20" name="storeAddress" value="storeAddress">
+            <label for="storeAddress">1568 Highlands Dr NE, Ste 120 Issaquah, WA 98029</label>
+            <br>
+            <input type="radio" id ="17160" name="storeAddress" value="storeAddress">
+            <label for="storeAddress">3622 Factoria Blvd SE Bellevue, WA 98006</label>
+            <br>
+       
+            <br><br>
+            <h3>Please select inside or carside pickup:</h3>
+        
+            <input type="radio" id="pickup" name="PickUp" value="insidePickUp">
+            <label for="insidePickUp">Inside Store PickUp</label>
+            <br>
+            <input type="radio" id="pickup" name="PickUp" value="outsidePickUp">
+            <label for="outsidePickUp">Carside PickUp</label>
+            <br><br>
+            <hr style="background-color: skyblue; height: 3px;">
+            <label for="Date"> Pickup Date:</label>
+            <input type="Date" id="Date" name="trip-start"
+                value="2020-10-19"
+                mim="2020-10-19" max="2020-11-30"><br><br>
+            <label for="Time">Pickup Time:</label>    
+            <input type="Time" id="Time" name="trip-start"
+                value="10:00am"
+                min="10:00am" max="9:00pm">
+
+            <br> <br><br>   
+            <input type="submit" value="Place Order">
+        </form>
+    </body>
+</html>
