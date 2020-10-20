@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <link rel="icon" type="image/png" href="SliceOfPizza.png">
+        <title>My Pizza Shop ~ Pizza 1</title>
+    
+        <style>
+            ul
+            {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: skyblue;
+            }
+            li
+            {
+                float: left;
+                              
+            }
+            li a
+            {
+                display: block;
+                color:black;
+                text-align:center;
+                padding:10px 16px;
+                text-decoration:none;
+                font-size: 20pt;
+            }
+
+            table,th,td
+            {
+                border: 1px solid skyblue;
+                border-collapse: collapse;
+                
+            }
+        
+        </style>
+        
+    
+    
+    </head>
+    <body>
+        
+        <ul>
+            <li><a href="HomePageOfPizzaShop.html"><img src="SliceOfPizza.png" alt="Pizza" width = "40" height="40" ></a></li>
+            <li><a href="HomePageOfPizzaShop.html">Home</a></li>
+            <li><a href="OnlineOrder.html">Online Order</a></li>
+            <li><a href="PizzaMenu.html">Menu</a></li>
+            <li><a href="LocationOfPizzaShop.html">Store Location</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+        <br>
+        <div style="margin-left: 10%; margin-right: 10%; text-align: center;">
+            <img src="FirstPizza.png" alt="spicePizza"  width="500px">
+            <h4 style="text-align: center;color: red;">Ingredient</h4>
+            <p>
+                Black olives,
+                <br>
+                green bell peppers,
+                <br>
+                salami,
+                <br>
+                ricotta
+            </p>
+        </div>
+
+        <Div>
+            <h3>Please Select The Availble Option:</h3>
+            <form action="LocationOfPizzaShop.html">
+                <table style="width: 100%;" >
+                <caption style="background-color: skyblue;">Availble Options</caption>
+                
+                <tr>
+                    <th>Pizza Crusts</th>
+                    <th>Pizza Size</th>
+                    <th>Sauces</th>
+                    <th>Meats</th>
+                    <th>Non-Meats</th>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <span style="font-size: 8pt;">Please select one of the crusts:</span>
+                        <br>
+                        <input type="radio" id ="1" name="Crusts" value="Hand Tossed" checked>
+                        <label for="Hand Tossed">Hand Tossed</label>
+                        <br>
+                        <input type="radio" id ="2" name="Crusts" value="Handmade Pan">
+                        <label for="Handmade Pan">Handmade Pand</label>
+                        <br>
+                        <input type="radio" id ="3" name="Crusts" value="Crunchy Thin Crust">
+                        <label for="Crunchy Thin Crust">Crunchy Thin Crust</label>
+                        <br>
+                        <input type="radio" id ="4" name="Crusts" value="Brooklyn Style">
+                        <label for="Brooklyn Style">Brooklyn Style</label>
+                        <br>
+                        <input type="radio" id ="5" name="Crusts" value="Gluten Free Crust">
+                        <label for="Gluten Free Crust">Gluten Free Crust</label>
+                        <br>
+                    </td>
+
+                    <td>
+                        <span style="font-size: 8pt;">Please select the size:</span>
+                        <br>
+                        <input type="radio" id ="Size_1" name="size" value="Small">
+                        <label for="Small">Small (10")</label>
+                        <br>
+                        <input type="radio" id ="Size_2" name="size" value="Medium">
+                        <label for="Medium">Medium (12")</label>
+                        <br>
+                        <input type="radio" id ="Size_3" name="size" value="Large" checked>
+                        <label for="Large">Large (14")</label>
+                        <br>
+                    </td>
+
+                    <td>
+                        <span style="font-size: 8pt;">Please select at most 3 of the sauces:</span>
+                        <br>
+                        <input onclick="chkcontrol()" type="checkbox" id="Sauces_1" name = "Alfredo Sauce" value="Alfredo Sauce">
+                        <label for="Alfredo Sauce">Alfredo Sauce</label>
+                        <br>
+                        <input type="checkbox" id="Sauces_2" name = "Blue Cheese Sauce" value="Blue Cheese Sauce">
+                        <label for="Blue Cheese Sauce">Blue Cheese Sauce</label>
+                        <br>
+                        <input type="checkbox" id="Sauces_3" name = "Garlic Parmesan Sauce" value="Garlic Parmesan Sauce">
+                        <label for="Garlic Parmesan Sauce">Garlic Parmesan Sauce</label>
+                        <br>
+                        <input type="checkbox" id="Sauces_4" name = "Hearty Marinara Sauce" value="Hearty Marinara Sauce">
+                        <label for="Hearty Marinara Sauce">Hearty Marinara Sauce</label>
+                        <br>
+                        <input type="checkbox" id="Sauces_5" name = "Honey BBQ Sauce" value="Honey BBQ Sauce">
+                        <label for="Honey BBQ Sauce">Honey BBQ Sauce</label>
+                        <br>
+                        <input type="checkbox" id="Sauces_6" name = "Hot Buffalo Sauce" value="Hot Buffalo Sauce">
+                        <label for="Hot Buffalo Sauce">Hot Buffalo Sauce</label>
+                        <br>
+                    </td>
+
+                    <td>
+                        <span style="font-size: 8pt;">Please select at most 2 of the meats:</span>
+                        <br>
+                        <input type="checkbox" id="meat_1" name="Bacon" value="Bacon">
+                        <label for="Bacon">Bacon</label>
+                        <br>
+                        <input type="checkbox" id="meat_2" name="Beef" value="Beef">
+                        <label for="Beef">Beef</label>
+                        <br>
+                        <input type="checkbox" id="meat_3" name="Ham" value="Ham">
+                        <label for="Ham">Ham</label>
+                        <br>
+                        <input type="checkbox" id="meat_4" name="Italian Sausage" value="Italian Sausage">
+                        <label for="Italian Sausage">Italian Sausage</label>
+                        <br>
+                        <input type="checkbox" id="meat_5" name="Pepperoni" value="Pepperoni">
+                        <label for="Pepperoni">Pepperoni</label>
+                        <br>
+                        <input type="checkbox" id="meat_6" name="Philly Steaki" value="Philly Steak">
+                        <label for="Philly Steak">Philly Steak</label>
+                        <br>
+                    </td>
+
+                    <td>
+                        <span style="font-size: 8pt;">Please select at most 3 of the non-meat</span>
+                        <br>
+                        <input type="checkbox" id="non-meat_1" name="American Cheese" value="American Cheese">
+                        <label for="American Cheese">American Cheese</label>
+                        <br>
+                        <input type="checkbox" id="non-meat_2" name="Banana Peppers" value="Banana Peppers">
+                        <label for="Banana Peppers">Banana Peppers</label>
+                        <br>
+                        <input type="checkbox" id="non-meat_3" name="Black Olives" value="Black Olives">
+                        <label for="Black Olives">Black Olives</label>
+                        <br>
+                        <input type="checkbox" id="non-meat_4" name="Cheddar Cheese" value="Cheddar Cheese">
+                        <label for="Cheddar Cheese">Cheddar Cheese</label>
+                        <br>
+                        <input type="checkbox" id="non-meat_5" name="Cheese" value="Cheese">
+                        <label for="Cheese">Cheese</label>
+                        <br>
+                        <input type="checkbox" id="non-meat_6" name="Diced Tomatoes" value="Diced Tomatoes">
+                        <label for="Diced Tomatoes">Diced Tomatoes</label>
+                        <br>
+                        <input type="checkbox" id="non-meat_7" name="Feta Cheese" value="Feta Cheese">
+                        <label for="Feta Cheese">Feta Cheese</label>
+                        <br>
+                    </td>
+                </tr>
+                </table>
+                <br>
+                <span style="float: right;margin: 5px;"><input type="Submit" value="Submit"></span>
+                <span style="float: right;padding: 5px;"><input type="reset" value="Clear"></span>
+               
+            </form>
+        </Div>
+    </body>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <h2>SHARE</h2>
+    <p>
+        <a href="https://www.facebook.com/"><img src="facebook.png"></a>
+        <a href=" https://twitter.com/"><img src="Tweet.png"></a>
+        <a href="https://mail.google.com/mail/"><img src="GmailIcon.png"></a>
+    </p>
+    </footer>
+</html>        
