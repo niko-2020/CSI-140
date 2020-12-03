@@ -1,0 +1,30 @@
+
+header{
+    display: flex;
+    background-color: ivory;
+}
+div{
+    background-color:lightgray;
+    padding:10px;
+    margin: 10px;
+}
+.div_main{
+    width: 80%;
+    background-color: aliceblue;
+    padding:10px;
+}
+hr{
+    background: black; 
+    height: 20px;;
+}
+
+a:hover{
+    color:hotpink;
+}
+a:visited{
+    color:yellow
+}
+ 
+.standout{
+    background-color: deeppink;
+}

@@ -1,0 +1,71 @@
+body{
+    margin: 5px;
+}
+h1{
+    font-size:16px;
+    color:#444444;
+    text-align: center;
+    font-family:Roboto, Helvetica, sans-serif;
+}
+.container{
+    margin: 5px;
+    font-size: 13px;
+}
+div.offer{
+    
+    margin: 4px;
+    text-align: center;
+    display: inline-block;
+    width: 400px;
+    font-weight: bold;
+    text-align: center;
+    border: #cccccc 1px solid;
+    box-shadow: 0px 2px 2px #dddddd,0px 0px 5px #dddddd;
+
+    background-color:rgb(250, 250, 250);
+
+    border-radius: 1px;;
+}
+div .offerTitle{
+    font-size:14px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color:#00b3b3;
+    margin:none;
+    padding:15px;
+}
+div.offerContents{
+    padding:20px;
+    border-radius: 0px;
+    border-bottom: #fafafa;
+    margin:5px;
+    background-color:rgb(250, 250, 250);
+}
+table{
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 2px #dddddd, 0px 0px 5px #dddddd;
+
+
+}
+table tr th{
+    font-size:12px;
+    font-weight: bold;
+    color: #777777;
+    padding:10px;
+    text-align: left;
+    border-bottom:#f1f1f1 solid 1px;
+}
+table tr td{
+    font-size: 13px;
+    color:#444444;
+    padding: 20px 10px;
+    text-align: left;
+    border-bottom:#f1f1f1 solid 1px;
+    font-weight: lighter;
+
+}
+.finalValue{
+    color: #2222ff;
+    font-weight: bold;
+}
